@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Volume, LSA and TSA of a cube
+</title>
+<script>
+     function avg( )
+	{
+	a= document.getElementById("s").value;
+	
+	volume=parseFloat(a)*parseFloat(a)*parseFloat(a)
+	document.getElementById("v").value= volume;
+	
+	lsa=4*parseFloat(a)*parseFloat(a)
+	document.getElementById("l").value= lsa;
+
+	tsa=6*parseFloat(a)*parseFloat(a)
+	document.getElementById("t").value= tsa;
+	}
+</script>
+</head>
+
+<body bgcolor="majenta" text="black">
+<form>
+Enter the side of cube (in cm) :<input type="text" id="s"><br>
+<input type="button"  value="CALCULATE" onclick="avg( )"><br>
+Volume of cube: <input type="text" id="v"><br>
+Lateral Surface Area of cube: <input type="text" id="l"><br>
+Total Surface Area of cube: <input type="text" id="t"><br>
+
+</form>
+</body>
+</html>

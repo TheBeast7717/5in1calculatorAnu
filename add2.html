@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Addition of two Numbers
+</title>
+<script>
+     function add( )
+	{
+	a= document.getElementById("fn").value;
+	b= document.getElementById("sn").value;
+	
+	c= parseFloat(a)+parseFloat(b)
+	document.getElementById("sum").value= c;
+	}
+</script>
+</head>
+
+<body bgcolor="pink" text="black">
+<form>
+Enter the first number :<input type="text" id="fn"><br>
+Enter the second number :<input type="text" id="sn"><br>
+<input type="button"  value="CALCULATE" onclick="add( )"><br>
+Sum of both Numbers : <input type="text" id="sum"><br>
+</form>
+<a href="simpleinterest.html" target="f2">Simple Interest Calculater</a>
+</body>
+</html>

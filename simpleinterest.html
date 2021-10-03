@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Simple interest and amount calculator
+</title>
+<script>
+     function si( )
+	{
+	p= document.getElementById("pr").value;
+	r= document.getElementById("rt").value;
+	t= document.getElementById("tm").value;
+
+	si= (parseFloat(p)*parseFloat(r)*parseFloat(t))/100
+	document.getElementById("SI").value= si;
+	
+	a= parseFloat(p)+parseFloat(si);
+	document.getElementById("amount").value=a;
+               }
+</script>
+</head>
+
+<body bgcolor="sky blue" text="black">
+<form>
+Enter the principal in rupees :<input type="text" id="pr"><br>
+Enter the rate of interest :<input type="text" id="rt"><br>
+Enter the time in years :<input type="text" id="tm"><br>
+<input type="button"  value="CALCULATE" onclick="si( )"><br>
+Simple Interest : <input type="text" id="SI"><br>
+Total Amount : <input type="text" id="amount">
+</form>
+</body>
+</html>

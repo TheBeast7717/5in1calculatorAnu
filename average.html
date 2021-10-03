@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Average of three numbers
+</title>
+<script>
+     function avg( )
+	{
+	a= document.getElementById("fn").value;
+	b= document.getElementById("sn").value; 
+	c= document.getElementById("tn").value;
+	
+	average=(parseFloat(a)+parseFloat(b)+parseFloat(c))/3
+	document.getElementById("av").value= average;
+
+	}
+</script>
+</head>
+
+<body bgcolor="orange" text="black">
+<form>
+Enter the first number :<input type="text" id="fn"><br>
+Enter the second number :<input type="text" id="sn"><br>
+Enter the third number :<input type="text" id="tn"><br>
+<input type="button"  value="CALCULATE" onclick="avg( )"><br>
+Average of the three numbers: <input type="text" id="av"><br>
+
+</form>
+</body>
+</html>

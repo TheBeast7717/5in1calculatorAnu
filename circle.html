@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Radius and perimeter calculator
+</title>
+<script>
+     function circle( )
+	{
+	r= document.getElementById("rd").value;
+	
+	ar=3.14*parseFloat(r)*parseFloat(r)
+	document.getElementById("a").value= ar;
+
+	pr=2*3.14*parseFloat(r)
+	document.getElementById("p").value= pr;
+	}
+</script>
+</head>
+
+<body bgcolor="yellow" text="black">
+<form>
+Enter the radius of the circle :<input type="text" id="rd"><br>
+<input type="button"  value="CALCULATE" onclick="circle( )"><br>
+Area of the circle : <input type="text" id="a"><br>
+Perimeter of the circle : <input type="text" id="p"><br><br>
+
+
+</form>
+</body>
+</html>
